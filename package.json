@@ -1,0 +1,23 @@
+{
+  "name": "sodrujestvo_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "export NODE_ENV=dev && node server",
+    "create_db": "db-migrate db:create test_reqres",
+    "migrate_up_all": "export DB_NAME=test_reqres && db-migrate up"
+  },
+  "author": "Grigor Danielyan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "config": "^3.3.1",
+    "cron": "^1.8.2",
+    "db-migrate": "^0.11.11",
+    "db-migrate-mysql": "^2.1.1",
+    "express": "^4.17.1",
+    "joi": "^17.1.1",
+    "mysql": "^2.18.1"
+  }
+}
